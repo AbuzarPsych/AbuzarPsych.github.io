@@ -67,6 +67,7 @@ document.querySelectorAll('.expertise-card').forEach((el, index) => {
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.navbar__link');
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   
   let current = '';
   sections.forEach(section => {
