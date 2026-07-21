@@ -5,82 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Professional landing page for Abuzar, featuring a concise overview, research interests, and links to CV and ORCID."
+      content="Abuzar's professional portfolio - Researcher & Psychologist specializing in evidence-based understanding and human-centered practice. View CV, ORCID profile, and research interests."
     />
-    <title>Abuzar | Portfolio</title>
+    <title>Abuzar | Researcher & Psychologist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#" class="navbar__logo">Abuzar</a>
+        <ul class="navbar__menu">
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#expertise" class="navbar__link">Expertise</a></li>
+          <li><a href="#research" class="navbar__link">Research</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <header class="hero">
       <div class="hero__content">
-        <p class="hero__eyebrow">Research • Psychology • Impact</p>
-        <h1>Abuzar</h1>
+        <div class="hero__profile">
+          <div class="profile-image">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <p class="hero__eyebrow">Researcher • Psychologist • Scholar</p>
+        <h1 class="hero__title">Abuzar</h1>
+        <p class="hero__subtitle">Evidence-based thinking at the intersection of psychology, research methodology, and human-centered practice.</p>
         <p class="hero__lead">
-          A thoughtful professional building work at the intersection of
-          psychology, research, and human-centered practice.
+          Dedicated to rigorous scholarship, ethical research, and creating meaningful impact through evidence-informed work.
         </p>
         <div class="hero__actions">
-          <a class="button button--primary" href="Abuzar_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-          <a class="button button--secondary" href="https://orcid.org/0009-0004-9999-7943" target="_blank" rel="noopener noreferrer">ORCID Profile</a>
+          <a class="button button--primary" href="Abuzar_CV.pdf" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <a class="button button--secondary" href="https://orcid.org/0009-0004-9999-7943" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-user-circle"></i> ORCID Profile
+          </a>
+          <a class="button button--secondary" href="https://github.com/AbuzarPsych" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
       </div>
     </header>
 
+    <div class="scroll-indicator">
+      <div class="scroll-indicator__dot"></div>
+    </div>
+
     <main>
-      <section class="section section--about">
-        <div class="section__heading">
-          <p class="section__eyebrow">About</p>
-          <h2>High-level professional profile</h2>
-        </div>
-        <p>
-          Abuzar is a driven researcher and professional whose work reflects a
-          commitment to evidence-based understanding, thoughtful communication,
-          and meaningful contribution in the field of psychology and related
-          human-focused domains.
-        </p>
-        <p>
-          This landing page offers a concise overview of background, key strengths,
-          and current professional interests while linking directly to the full
-          curriculum vitae and scholarly profile.
-        </p>
-      </section>
-
-      <section class="section section--focus">
-        <div class="section__heading">
-          <p class="section__eyebrow">Focus Areas</p>
-          <h2>What defines the work</h2>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Research</h3>
-            <p>Exploring ideas with rigor, structure, and curiosity.</p>
-          </article>
-          <article class="card">
-            <h3>Psychology</h3>
-            <p>Bringing a people-centered lens to understanding behavior and experience.</p>
-          </article>
-          <article class="card">
-            <h3>Impact</h3>
-            <p>Connecting knowledge to practical outcomes and meaningful progress.</p>
-          </article>
+      <section id="about" class="section section--about">
+        <div class="section__wrapper">
+          <div class="section__heading">
+            <span class="section__tag">About</span>
+            <h2>Professional Profile</h2>
+          </div>
+          <div class="about__content">
+            <p class="about__intro">
+              I am a dedicated researcher and scholar committed to advancing evidence-based understanding of human behavior and psychology. My work integrates rigorous methodology, thoughtful analysis, and a deep commitment to meaningful contribution in research and practice.
+            </p>
+            <div class="about__highlights">
+              <div class="highlight">
+                <h4>Research Focus</h4>
+                <p>Designing and conducting rigorous empirical studies with emphasis on methodological integrity and reproducibility.</p>
+              </div>
+              <div class="highlight">
+                <h4>Psychology & Human Behavior</h4>
+                <p>Deep engagement with psychological theory and application, exploring the complexity of human experience and behavior.</p>
+              </div>
+              <div class="highlight">
+                <h4>Practical Impact</h4>
+                <p>Translating research findings into actionable insights for practitioners, organizations, and communities.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section section--links">
-        <div class="section__heading">
-          <p class="section__eyebrow">Connect</p>
-          <h2>Explore more</h2>
+      <section id="expertise" class="section section--expertise">
+        <div class="section__wrapper">
+          <div class="section__heading">
+            <span class="section__tag">Expertise</span>
+            <h2>Core Competencies</h2>
+          </div>
+          <div class="expertise-grid">
+            <div class="expertise-card">
+              <div class="expertise-card__icon">
+                <i class="fas fa-flask-vial"></i>
+              </div>
+              <h3>Research Design & Methodology</h3>
+              <p>Quantitative and qualitative research approaches, experimental design, statistical analysis, and research ethics.</p>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-card__icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>Psychology & Behavioral Science</h3>
+              <p>Human behavior analysis, psychological theory, cognitive processes, and evidence-based interventions.</p>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-card__icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Data Analysis & Interpretation</h3>
+              <p>Statistical analysis, data visualization, computational methods, and insight generation from complex datasets.</p>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-card__icon">
+                <i class="fas fa-pen-fancy"></i>
+              </div>
+              <h3>Academic Writing & Communication</h3>
+              <p>Scholarly publication, clear technical communication, report writing, and knowledge dissemination.</p>
+            </div>
+          </div>
         </div>
-        <ul class="link-list">
-          <li><a href="Abuzar_CV.pdf" target="_blank" rel="noopener noreferrer">View the full CV</a></li>
-          <li><a href="https://orcid.org/0009-0004-9999-7943" target="_blank" rel="noopener noreferrer">Open ORCID profile</a></li>
-          <li><a href="https://github.com/AbuzarPsych" target="_blank" rel="noopener noreferrer">Visit GitHub profile</a></li>
-        </ul>
+      </section>
+
+      <section id="research" class="section section--research">
+        <div class="section__wrapper">
+          <div class="section__heading">
+            <span class="section__tag">Scholarly Profile</span>
+            <h2>Research & Publications</h2>
+          </div>
+          <div class="research-content">
+            <p>My scholarly work is documented and indexed through academic platforms. For a comprehensive view of publications, citations, and research contributions, please visit:</p>
+            <div class="research-links">
+              <a href="https://orcid.org/0009-0004-9999-7943" class="research-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-orcid"></i>
+                <span>
+                  <strong>ORCID Profile</strong>
+                  <small>0009-0004-9999-7943</small>
+                </span>
+              </a>
+              <a href="Abuzar_CV.pdf" class="research-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-file-pdf"></i>
+                <span>
+                  <strong>Full Curriculum Vitae</strong>
+                  <small>Complete academic record</small>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--connect">
+        <div class="section__wrapper">
+          <div class="section__heading">
+            <span class="section__tag">Connect</span>
+            <h2>Get in Touch</h2>
+          </div>
+          <div class="connect-grid">
+            <div class="connect-item">
+              <h3>Academic Profiles</h3>
+              <ul class="social-links">
+                <li><a href="https://orcid.org/0009-0004-9999-7943" target="_blank" rel="noopener noreferrer"><i class="fab fa-orcid"></i> ORCID</a></li>
+                <li><a href="https://github.com/AbuzarPsych" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+              </ul>
+            </div>
+            <div class="connect-item">
+              <h3>Documents</h3>
+              <ul class="social-links">
+                <li><a href="Abuzar_CV.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Download CV</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Abuzar. Built for a clean and modern GitHub Pages presence.</p>
+      <div class="footer__content">
+        <div class="footer__section">
+          <h3>Abuzar</h3>
+          <p>Researcher & Psychologist dedicated to evidence-based scholarship and human-centered practice.</p>
+        </div>
+        <div class="footer__section">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#research">Research</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4>Social</h4>
+          <ul class="footer__social">
+            <li><a href="https://github.com/AbuzarPsych" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://orcid.org/0009-0004-9999-7943" target="_blank" rel="noopener noreferrer"><i class="fab fa-orcid"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="year"></span> Abuzar. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
